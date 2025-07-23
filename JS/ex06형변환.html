@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 데이터의 타입을 변경하는 형변환
+        // 문자를 숫자로 바꾸는 방법(가장 많이 사용)
+        // 이유 : 웹에서 사용자가 입력하는 내용은 String 타입
+        // 주의점 : +연산을 제외하고 나머지 산술연산자(-,*,/)는 형변환을 하지 않아도 숫자로 인식
+        // 하지만 반드시 숫자를 필요한 경우에는 무조건 형변환을 해주자(규칙)
+        // 변수에 담을 때부터 숫자로 넣으면 코드가 효율적이다.
+        let num1 = Number(prompt("좋아하는 첫 번째 숫자 입력하세요"));
+        let num2 = Number(prompt("좋아하는 두 번째 숫자 입력하세요"));
+        console.log(num1+num2);
+        console.log(num1-num2);
+    </script>
+</body>
+</html>

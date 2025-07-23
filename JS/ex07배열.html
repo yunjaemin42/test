@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 배열 = 프로그래밍에서 같은 의미를 가진 데이터를 한번에 묶어서 관리할 때 사용한다.
+        // 이유 = 매번 변수를 새롭게 만들기에는 양이 너무 많다.
+        // 이유2 = 배열은 데이터를 조회할 때 인덱스번호를 사용한다. -> 번호만 가지고는 의미를 유추할 수 없다.
+        let num1 = 5;
+        let num2 = 10;
+        let num3 = 15;
+
+        let number = [5,10,15];
+        // 배열에서 데이터를 조회할 때는 인덱스를 활용한다.
+        // 인덱스 주의점 -> 0부터 시작한다
+        console.log(number[2])
+
+        // 값을 변경하는 방법
+        number[0] = 1;
+
+        // 배열 함수중에 무조건 맨 마지막에 값을 추가하는 방법
+        number.push(100)
+    </script>
+</body>
+</html>

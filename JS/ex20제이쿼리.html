@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        라이브러리를 임포트 하는 방식 2가지
+        1) 파일을 직접 다운로드해서 파일을 불러오는 파일로드 방식(상대경로)
+            - 장점 : 안전성(파일을 내가 소유하고 있기 때문에)
+            - 단점 : 공유가 편하지 않다. 업데이트 대응에 좋지 않다.
+        2) 파일을 네트워크를 통해서 불러오는 CDN 방식(절대경로)
+            - 장점 : 공유가 편하다, 업데이트 대응에 편하다.
+            - 단점 : 안전성이 보장되지 않는다
+            (원본에 삭제되면 사용이 불가, 네트워크가 불안정하면 사용이 불가능)
+    -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1 id="text">제이쿼리 방식으로 접근</h1>
+    <button id="btn">기능 실행</button>
+
+    <script>
+        // 실습 : 버튼을 클릭했을 때 h1태그의 컨텐츠를 콘솔에 출력
+        const print = () =>{
+            //document.getElementById("text").innerText
+            $("#text").text("수정");
+            $("#text").css("color",red);
+
+        }
+        
+        //document.getElementById("btn").addEventListener("click", print);
+        $("#btn").on("click",print);
+    </script>
+</body>
+</html>

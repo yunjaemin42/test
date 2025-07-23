@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 조건문 : 특정 조건에 성립할 때 실행하고, 조건에 성립하지 않는다면 다른 로직을 실행
+        // let num = 5;
+        // 실습 : 만약에 num이 10보다 크다면 alert으로 큽니다 출력,
+        // 그렇지 않고 num이라면 10이라면 alert창으로 같습니다. 둘다 해당이 되지 않는다면 작습니다 출력
+        // if(num>10){
+        //     alert("큽니다.")
+        // }
+        // else if(num==10){
+        //     alert("같습니다.")
+        // }
+        // else {
+        //     alert("작습니다.")
+        // }
+
+        // 실습 : 사용자에게 확인, 취소를 입력받은 후 
+        // -> 사용자가 확인을 누르면 회원탈퇴완료 메시지, 취소 누르면 그냥 종료
+        let check = confirm("회원탈퇴를 하시겠습니까?");
+
+        if(check == true){
+            alert("회원탈퇴 완료")
+        }
+    </script>
+</body>
+</html>

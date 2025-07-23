@@ -1,0 +1,6 @@
+** nodemon 모듈
+- node.js 개발 시, 파일을 수정할 때마다 매번 node를 종료 후 다시 실행해야하는 불편함이 있음
+- 파일들을 계속해서 모니터링 하며 수정사항이 있을 때 마다 자동으로 서버를 재실행해주는 nodemon 모듈을 설치해보자.
+
+** 설치 방법
+- nodemon을 사용할 폴더로 가서 terminal 라인에 "npm install nodemon -g"
